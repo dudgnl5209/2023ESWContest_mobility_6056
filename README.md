@@ -21,7 +21,8 @@
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/bc0abb0f-d527-4996-b297-d78058aa362e)
 # Application 구성
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/a498fc38-25d1-4e8b-af8a-4ee13972a9c9)
-# Application 사용자 가이드
+# Application UI GUIDE
+![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/ebce582e-ab40-4dac-b618-efe08f3b6681)
 
 # 영역별 개발 환경
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/1dc53eff-8f67-4eda-bc12-3ea82ed63f46)
