@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import './filesConetent.dart';
-
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:googleapis/drive/v3.dart' as drive;
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:path/path.dart' as path;
+
 
 class BackupScreen extends StatefulWidget {
   @override
@@ -54,17 +54,40 @@ class _BackupScreenState extends State<BackupScreen> {
           // 파일 목록 가져오기
           drive.FileList fileList = await driveApi.files.list();
 
+          DateTime now = DateTime.now();
+          DateTime cutoffTime = now.subtract(Duration(hours: 48));
+
           // 가져온 파일 목록을 _files에 할당
           setState(() {
             _files = fileList.files!;
           });
 
           setState(() {
-            // .txt 파일 필터링
-            txtFiles = _files.where((file) {
-              return file.mimeType != 'application/vnd.google-apps.folder' &&
-                  file.name!.toLowerCase().endsWith('.txt');
-            }).toList();
+            // 48시간 이내의 파일 필터링
+            _files.forEach((file) {
+              // 파일명에서 날짜와 시간 정보 추출
+              RegExp regExp = RegExp(r'(\d{4})(\d{2})(\d{2})_(\d{2})(\d{2})');
+              Match? match = regExp.firstMatch(file.name!);
+
+              if (match != null) {
+                int year = int.parse(match.group(1)!);
+                int month = int.parse(match.group(2)!);
+                int day = int.parse(match.group(3)!);
+                int hour = int.parse(match.group(4)!);
+                int minute = int.parse(match.group(5)!);
+
+                // 파일의 날짜와 시간을 DateTime 객체로 변환
+                DateTime fileTime = DateTime(year, month, day, hour, minute);
+
+                // 파일이 48시간 이내에 생성된 경우 추가
+                if (now.difference(fileTime).inHours <= 48) {
+                  if (file.name!.toLowerCase().endsWith('.txt')) {
+                    txtFiles.add(file);
+                  }
+                }
+              }
+            });
+
 
             // .mp4 파일 필터링 (해당 .txt 파일과 같은 이름이 있는 경우)
             txtFiles.removeWhere((txtFile) {
@@ -78,16 +101,20 @@ class _BackupScreenState extends State<BackupScreen> {
               return !mp4FileExists;
             });
             txtFiles.sort((a, b) => a.name!.compareTo(b.name!));
+
             txtFiles = txtFiles.map((file) {
               return drive.File.fromJson(file.toJson())
                 ..name = path.basenameWithoutExtension(file.name!);
             }).toList();
           });
+
         } catch (error) {
           print('파일 목록을 가져오는 중 오류가 발생했습니다: $error');
         }
       }
-      _loading = false;
+      setState(() {
+        _loading = false;
+      });
     }
   }
 
@@ -120,10 +147,9 @@ class _BackupScreenState extends State<BackupScreen> {
             await media.stream.forEach((chunk) => byteList.addAll(chunk));
             String content = utf8.decode(byteList);
 
-            List<String> items = content.split(',');
+            List<String> items = content.split('\n');
 
-            String formattedTextContent = items.map((item) => item.trim()).join(
-                '\n');
+            String formattedTextContent = items.map((item) => item.trim()).join('\n');
 
             Navigator.push(
               context,
@@ -151,40 +177,141 @@ class _BackupScreenState extends State<BackupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
+
         backgroundColor: Color(0xFFF4F7FF),
         elevation: 0,
+
         actions: <Widget>[
-          _user != null
-              ? Row(
-            children: [
-              GestureDetector(
-                onTap: _signOut,
-                child: Row(
-                  children: [
-                    //  SizedBox(width: 8),  // 아이콘과 텍스트 사이의 간격을 조절하세요.
-                    Text(
-                      '로그아웃',
-                      style: TextStyle(
-                        fontSize: 17.0,
-                        color: Colors.black,  // 텍스트 색상을 검정색으로 설정
+          if (_user != null)
+            Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          contentPadding: EdgeInsets.zero,
+                          content: Container(
+                            width: 350,
+                            height: 300,
+                            padding: EdgeInsets.all(20.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Image.asset(
+                                      'assets/person.png',
+                                      height: 100,
+                                      width: 100,
+                                    ),
+                                    SizedBox(width: 40),
+                                    Text(
+                                      '유저 정보',
+                                      style: TextStyle(
+                                        fontSize: 17.0,
+                                        color: Colors.black,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(height: 50),
+                                if (_user?.displayName != null)
+                                  Padding(
+                                    padding: EdgeInsets.symmetric(vertical: 5.0),
+                                    child: Text(
+                                      '이름: ${_user?.displayName}',
+                                      style: TextStyle(fontSize: 16.0),
+                                    ),
+                                  ),
+                                SizedBox(height: 10),
+                                if (_user?.email != null)
+                                  Padding(
+                                    padding: EdgeInsets.symmetric(vertical: 5.0),
+                                    child: Text(
+                                      '아이디: ${_user?.email}',
+                                      style: TextStyle(fontSize: 16.0),
+                                    ),
+                                  ),
+                              ],
+                            ),
+                          ),
+
+                          actions: [
+                            TextButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              child: Text('닫기'),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  },
+                  child: Row(
+                    children: [
+                      SizedBox(width: 20),
+                      Image.asset(
+                        'assets/person.png',
+                        height: 30,
+                        width: 30,
                       ),
-                    ),
-                    SizedBox(width: 10),  // 텍스트와 아이콘 사이의 간격을 조절하세요.
-                    Image.asset(
-                      'assets/logout.png',  // 'logout.png' 이미지 경로에 따라 수정하세요.
-                      height: 30,  // 아이콘의 높이 설정
-                      width: 30,   // 아이콘의 너비 설정
-                    ),
-                    SizedBox(width: 20),
-                  ],
+                      SizedBox(width: 10),
+                      Text(
+                        '유저정보',
+                        style: TextStyle(
+                          fontSize: 17.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          )
-              : SizedBox(),
+              ],
+            ),
+          ),
+
+          if (_user != null)
+            Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                GestureDetector(
+                  onTap: _signOut,
+                  child: Row(
+                    children: [
+                      Text(
+                        '로그아웃',
+                        style: TextStyle(
+                          fontSize: 17.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Image.asset(
+                        'assets/logout.png',
+                        height: 30,
+                        width: 30,
+                      ),
+                      SizedBox(width: 20),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
+
+
+
+
       body: Center(
         child: _user == null
             ? Column(
