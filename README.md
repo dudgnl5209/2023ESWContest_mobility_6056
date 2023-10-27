@@ -1,14 +1,6 @@
 # 2023ESWContest_mobility_6056
 # T-VAR( Traffic signal Violation Automatic Reporting system )
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/ecdb9471-a84f-4753-afbc-9ab51624df65)
-# 목차
-1. 개발 개요
-2. 개발 환경 설명
-3. 개발 프로그램 설명
-4. 개발 중 발생한 장애요인과 해결방안
-5. 개발 결과물의 차별성
-6. 개별 결과물의 파급력 및 기대효과
-7. 개발 일정 및 업무 분담
 # 작품 소개
 본 시스템은 차량 내 빌트인 캠을 활용한 신호 위반 자동 단속 시스템으로, 빌트인 캠의 영상과 라즈베리파이, GPS 센서를 이용한다.
 앞 차량을 빌트인 캠 및 나의 GPS 정보를 이용해 거리를 측정하고, 나와 신호등까지의 거리를 기준으로 신호 위반을 판단한다.
@@ -29,3 +21,7 @@
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/bc0abb0f-d527-4996-b297-d78058aa362e)
 # Application 구성
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/a498fc38-25d1-4e8b-af8a-4ee13972a9c9)
+# Application 사용자 가이드
+
+# 영역별 개발 환경
+![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/1dc53eff-8f67-4eda-bc12-3ea82ed63f46)
