@@ -24,7 +24,7 @@
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124027423/b0974b6d-9655-4c19-b5e5-d732a5097622)
 
 # Application 구성
-![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124030468/4de425c7-ce51-49ed-87e4-ec3504860009)
+![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124030468/19170ef9-adbb-4d95-8ac3-2aa6b55f7a36)
 
 # Application UI GUIDE
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124027423/f1e04195-422d-4bed-89bc-b61135aad879)
