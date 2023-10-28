@@ -109,6 +109,43 @@ class FileContentScreen extends StatelessWidget {
   }
 
 
+  Future<String> getAddressComponents(String lat, String lon) async {
+    final apiKey = 'AIzaSyCtLU3xO0Tn8aEkRB1YheMn8kwybz70Km0'; // 본인의 API 키로 대체하세요.
+    final url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lon&key=$apiKey&language=ko';
+
+    final response = await http.get(Uri.parse(url));
+
+    if (response.statusCode == 200) {
+      final Map<String, dynamic> data = json.decode(response.body);
+      final results = data['results'];
+      if (results.isNotEmpty) {
+        List<dynamic> addressComponents = results[2]['address_components'];
+        String formattedAddress = '';
+
+        for (var component in addressComponents) {
+          if (component['types'].contains('establishment')) {
+            formattedAddress = component['long_name'];
+            break;
+          }
+        }
+
+        // 건물명을 찾았으면 반환, 아니면 '건물명을 찾을 수 없습니다.' 반환
+        if (formattedAddress.isNotEmpty) {
+          return formattedAddress.trim();
+        } else {
+          return '건물명을 찾을 수 없습니다.';
+        }
+      } else {
+        print('주소를 가져올 수 없습니다. 상태 코드: ${response.statusCode}');
+        return 'Could not fetch address components';
+      }
+    }
+
+    return 'Could not fetch address components';
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
     String displayFileName = fileName.split('.').first;
@@ -231,7 +268,7 @@ class FileContentScreen extends StatelessWidget {
                         child: Container(
                           padding: EdgeInsets.only(left: 20.0, top: 5.0, bottom: 5.0),
                           child: Text(
-                            '위반위치',
+                            '위반장소',
                             style: TextStyle(
                               fontSize: 16.0,
                               fontWeight: FontWeight.bold,
@@ -250,7 +287,7 @@ class FileContentScreen extends StatelessWidget {
                             } else if (snapshot.hasError) {
                               return Text('Error: ${snapshot.error}');
                             }  else {
-                              String addressWithoutCountry = snapshot.data!.replaceAll('대한민국', '').trim();
+                              String   addressWithoutCountry = snapshot.data!.replaceAll('대한민국', '').trim();
 
                               return Container(
                                 padding: EdgeInsets.only(top: 5.0, bottom: 5.0),
@@ -268,10 +305,57 @@ class FileContentScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 6),
+
+                  SizedBox(height: 7),
+
+                  Row(
+                    children: [
+                      Expanded(
+                        flex: 2,
+                        child: Container(
+                          padding: EdgeInsets.only(left: 20.0, top: 5.0, bottom: 5.0),
+                          child: Text(
+                            '위반위치',
+                            style: TextStyle(
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 30.0),
+                      Expanded(
+                        flex: 5,
+                        child: FutureBuilder<String>(
+                          future: getAddressComponents(tmp[0], tmp[1]),
+                          builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
+                            if (snapshot.connectionState == ConnectionState.waiting) {
+                              return CircularProgressIndicator(); // 로딩 중인 동안 표시될 위젯
+                            } else if (snapshot.hasError) {
+                              return Text('Error: ${snapshot.error}');
+                            }  else {
+                              String addressComponents = snapshot.data!;
+                              return Container(
+                                padding: EdgeInsets.only(top: 5.0, bottom: 5.0),
+                                child: Text(
+                                  addressComponents.trim(),
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              );
+                            }
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  SizedBox(height: 7),
 
                   Container(
-                    width: 180, // 버튼의 너비 조정
+                    width: 170, // 버튼의 너비 조정
                     height: 45, // 버튼의 높이 조정
                     child: ElevatedButton(
                       onPressed: () {
@@ -299,8 +383,8 @@ class FileContentScreen extends StatelessWidget {
                           children: [
                             Image.asset(
                               'assets/map.png',
-                              width: 30,
-                              height:30,
+                              width: 35,
+                              height:35,
                             ),
                             SizedBox(width: 10),
                             Text(
@@ -308,19 +392,17 @@ class FileContentScreen extends StatelessWidget {
                               textAlign: TextAlign.center,
                             ),
                           ],
-
                         ),
-
                       ),
-
                     ),
-
                   ),
+
                   SizedBox(height: 2),
                   Divider(
                     color: Colors.grey,
                     thickness: 1.0,
                   ),
+                  SizedBox(height: 5),
 
                   Padding(
                     padding: EdgeInsets.only(left: 20.0, top: 5.0),
