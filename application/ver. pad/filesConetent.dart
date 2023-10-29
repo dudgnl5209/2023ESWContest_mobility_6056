@@ -512,7 +512,7 @@ class _ChewieListItemState extends State<ChewieListItem> {
             padding: EdgeInsets.only(top: 24.0),
             child: Text(
               '제보 영상',
-              style: TextStyle(fontSize: 20.0, color: Colors.black),
+              style: TextStyle(fontSize: 24.0, color: Colors.black),
             ),
           ),
           leading: Padding(

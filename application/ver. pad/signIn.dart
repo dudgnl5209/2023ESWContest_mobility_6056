@@ -197,7 +197,7 @@ class _BackupScreenState extends State<BackupScreen> {
                           return AlertDialog(
                             contentPadding: EdgeInsets.zero,
                             content: Container(
-                              width: 500,
+                              width: 600,
                               height: 450,
                               padding: EdgeInsets.all(20.0),
                               child: Column(
