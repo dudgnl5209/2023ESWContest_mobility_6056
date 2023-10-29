@@ -30,6 +30,7 @@ class _MapViewScreenState extends State<MapViewScreen> {
         title: Text(
           '지도 보기',
           style: TextStyle(
+            fontSize: 24.0,
             color: _isSatelliteView ? Colors.white : Colors.black,
           ),
         ),
@@ -306,7 +307,7 @@ class FileContentScreen extends StatelessWidget {
                     ],
                   ),
 
-                  SizedBox(height: 12),
+                  SizedBox(height: 13),
 
                   Row(
                     children: [
@@ -352,7 +353,7 @@ class FileContentScreen extends StatelessWidget {
                     ],
                   ),
 
-                  SizedBox(height: 7),
+                  SizedBox(height: 8),
 
                   Container(
                     width: 170, // 버튼의 너비 조정
@@ -386,7 +387,7 @@ class FileContentScreen extends StatelessWidget {
                               width: 35,
                               height:35,
                             ),
-                            SizedBox(width: 10),
+                            SizedBox(width: 0),
                             Text(
                               '지도에서 보기',
                               textAlign: TextAlign.center,
