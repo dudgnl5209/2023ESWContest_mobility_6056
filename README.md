@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=2023ESWContest_mobility_명장_6056&fontSize=50" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=2023ESWContest_mobility_명장_6056&fontSize=40" />
 
 2023ESWContest_mobility_명장_6056
 =================================
