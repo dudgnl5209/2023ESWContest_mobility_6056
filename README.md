@@ -8,7 +8,16 @@
 앞 차량을 빌트인 캠 및 나의 GPS 정보를 이용해 거리를 측정하고, 나와 신호등까지의 거리를 기준으로 신호 위반을 판단한다.
 최종적으로 판단된 정보를 서버에 저장 및 Application으로 전송해 자동으로 양식을 완성해 준다.
 
-## 시연 영상
+# 목차
+• 🎥시연 영상<br>
+• 💁‍♂️팀 소개 및 역할<br>
+• 📌영역별 소개<br>
+• 📁파일 구성<br>
+• 👨‍💻영역별 개발 환경<br>
+• 🔍각 영역별 구성도<br>
+• 🛠️HW 설계
+
+## 🎥시연영상
 <img src="https://img.shields.io/badge/youtube-FF0000?style=for-the-badge&logo=youtube&logoColor=White">
 https://myoungjang.site/youtube
 
@@ -21,7 +30,7 @@ https://myoungjang.site/youtube
 | **Team member** | 한현준 |        | alqp201@gmail.com   | • 객체 추적 모델 설계 및 구현<br>• Image Processing<br>• 신호 위반 판단 Logic 구현<br>• 위반 데이터 후처리     |
 | **Team member** | 오준혁 |        | stephan330@naver.com| • Custom data 학습 파일 생성<br>• 공공 데이터 수집 및 가공<br>• 모듈 Case 설계 및 안전성 검증<br>• 데이터 증강 알고리즘 개발     |
 
-### 📌영역별 소개
+## 📌영역별 소개
 1. Built-in Cam Module : 상시 촬영을 진행하며, 신호등과의 거리가 50m 안으로 들어올 때부터 서버에 실시간으로 스트림을 진행한다
 2. Server : 실시간으로 전송받은 영상 정보에 대해 객체 인식을 진행하고 인식된 객체와 나의 거리 파악, 서울시 공공데이터를 기준으로 신호등과 나의 거리를 파악을 통해
 신호 위반 판단을 진행한다.
@@ -31,11 +40,11 @@ https://myoungjang.site/youtube
 5. API : 위치 좌표를 Reverse Geo Coding을 이용해 도로명 주소로 바꿔준다.
 
 
-### 📁파일 구성
+## 📁파일 구성
 ----------------
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124027423/df1933c6-b62a-4ed1-b564-d97588a0dcc2)
 
-### 👨‍💻영역별 개발 환경
+## 👨‍💻영역별 개발 환경
 --------------------
 #### 1. 📷Built-in-Cam
 >###### OS
@@ -71,16 +80,29 @@ https://myoungjang.site/youtube
 <img src="https://img.shields.io/badge/googledrive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white"> <img src="https://img.shields.io/badge/Kakaomaps-FFCD00?style=for-the-badge&logo=googlemaps&logoColor=white">
 
 ## 🔍각 영역별 구성도
-### 📷Built - in Cam Module 구성
+#### 📷Built - in Cam Module 구성
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124027423/ced773f5-92f7-4f61-89d0-5ff33362b445)
 
-### 🛜Server 구성 및 상황별 판단 Logic
+#### 🛜Server 구성 및 상황별 판단 Logic
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124027423/b0974b6d-9655-4c19-b5e5-d732a5097622)
 
-### 📱Application 구성
+#### 📱Application 구성
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124030468/359f16c2-7100-4dd5-b490-d9db40d1fe59)
 
-### 📲Application UI GUIDE
+#### 📲Application UI GUIDE
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124030468/e63015f9-98e6-4c62-8250-0e61f8a0263b)
+
+## 🛠️HW 설계
+• T-VAR 시스템에 맞는 자체적인 모듈 제작 진행
+#### 설계 사양 및 사용한 SW 
+• 3D Modeling SW  : <img src="https://img.shields.io/badge/Fusion360-FF6550?style=for-the-badge&logo=nx&logoColor=white"> <br>
+• Matterial : PLA <br>
+• Size : 000 * 000 * 000 (W * L * H)
+
+#### HW 구성 및 기능
+![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/a7faf418-ce50-4e01-acd5-e0bcfd7ed424)
+
+
+
 
 
