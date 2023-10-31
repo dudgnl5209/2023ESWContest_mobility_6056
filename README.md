@@ -1,7 +1,7 @@
 # 🚗2023ESWContest_mobility_명장_6056
 
 ## 🕵️‍♀️T-VAR(Traffic signal Violation Automatic Reporting system)
-![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124027423/aa2c9cd3-94e0-477c-998d-246843566b75)
+<img src="./Readme_img/Functional_design(1097_705).png" width="887.6" height="564"/>
 
 ### 📜작품 소개
 본 시스템은 차량 내 빌트인 캠을 활용한 신호 위반 자동 단속 시스템으로, 빌트인 캠의 영상과 라즈베리파이, GPS 센서를 이용한다.
@@ -42,7 +42,7 @@ https://myoungjang.site/youtube
 
 ## 📁파일 구성
 ----------------
-![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124027423/df1933c6-b62a-4ed1-b564-d97588a0dcc2)
+<img src="./Readme_img/File_directory(921_288).png" width="736.8" height="230.4"/>
 
 ## 👨‍💻영역별 개발 환경
 --------------------
@@ -81,13 +81,13 @@ https://myoungjang.site/youtube
 
 ## 🔍각 영역별 구성도
 #### 📷Built - in Cam Module 구성
-![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124027423/ced773f5-92f7-4f61-89d0-5ff33362b445)
+<img src="./Readme_img/Built_in_cam_module(650_313).png" width="520" height="250.4"/>
 
 #### 🛜Server 구성 및 상황별 판단 Logic
-![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124027423/b0974b6d-9655-4c19-b5e5-d732a5097622)
+<img src="./Readme_img/Server_and_logic(1072_682).png" width="857.6" height="545.6"/>
 
 #### 📱Application 구성
-![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124030468/359f16c2-7100-4dd5-b490-d9db40d1fe59)
+<img src="./Readme_img/Application(1108_615).png" width="886.4" height="492"/>
 
 #### 📲Application UI GUIDE
 ![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124030468/e63015f9-98e6-4c62-8250-0e61f8a0263b)
