@@ -67,7 +67,7 @@ record = True
 
 #보조 기능들 불러오기
 from funct import haversine, gps, nearest_SLpoint, nearest_TLpoint, split_line
-from send_txt import save_result_to_drive
+from send_data import save_result_to_drive
 
 
 from ultralytics.utils.plotting import Annotator, colors, save_one_box
