@@ -100,7 +100,9 @@ https://myoungjang.site/youtube
 • Size : 000 * 000 * 000 (W * L * H)
 
 #### HW 구성 및 기능
-![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/a7faf418-ce50-4e01-acd5-e0bcfd7ed424)
+![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/0b48d3cd-db40-41d2-b12e-404ee905a4f1)
+
+
 
 #### Modeling File 및 실제 제품
 1. Modeling File
