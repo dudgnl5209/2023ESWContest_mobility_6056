@@ -8,7 +8,11 @@
 앞 차량을 빌트인 캠 및 나의 GPS 정보를 이용해 거리를 측정하고, 나와 신호등까지의 거리를 기준으로 신호 위반을 판단한다.
 최종적으로 판단된 정보를 서버에 저장 및 Application으로 전송해 자동으로 양식을 완성해 준다.
 
-## 팀 소개 및 역할
+## 시연 영상
+<img src="https://img.shields.io/badge/youtube-FF0000?style=for-the-badge&logo=youtube&logoColor=White">
+https://myoungjang.site/youtube
+
+## 💁‍♂️팀 소개 및 역할
 | Position    | Name&nbsp;&nbsp;   | GitHub | Email | Role |
 |:-------------:|:--------:|--------|-------|------|
 | **Team Leader** | 김영휘 | https://github.com/dudgnl5209| dudgnl5209@naver.com| 기획 및 개발 총괄, 웹 스트리밍 통신 구현, 위반 데이터 저장소 관리,Reverse Geocoding 통합 처리, 공공 데이터 수집 및 가공     |
