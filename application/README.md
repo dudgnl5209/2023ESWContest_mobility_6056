@@ -1,1 +1,1 @@
-명장 팀 애플리케이션 dart 파일입니다.
+명장 팀 Application dart 파일입니다.
