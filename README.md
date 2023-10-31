@@ -12,7 +12,7 @@
 • 🎥시연 영상<br>
 • 💁‍♂️팀 소개 및 역할<br>
 • 📌영역별 소개<br>
-• 📁파일 구성<br>
+• 📁파일 구성도도<br>
 • 👨‍💻영역별 개발 환경<br>
 • 🔍각 영역별 구성도<br>
 • 🛠️HW 설계
@@ -40,7 +40,7 @@ https://myoungjang.site/youtube
 5. API : 위치 좌표를 Reverse Geo Coding을 이용해 도로명 주소로 바꿔준다.
 
 
-## 📁파일 구성
+## 📁파일 구성도
 ----------------
 <img src="./Readme_img/File_directory(921_288).png" width="736.8" height="230.4"/>
 
