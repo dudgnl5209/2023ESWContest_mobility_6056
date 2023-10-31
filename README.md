@@ -100,7 +100,7 @@ https://myoungjang.site/youtube
 • Size : 000 * 000 * 000 (W * L * H)
 
 #### HW 구성 및 기능
-<img src="./Readme_img/HW_design.png" width="483.5 * 0.3" height="326"/>
+<img src="./Readme_img/HW_design.png" width="676.9" height="456.4"/>
 
 
 
