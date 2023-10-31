@@ -4,15 +4,15 @@
 <img src="./Readme_img/Functional_design(1097_705).png" width="887.6" height="564"/>
 
 ### 📜작품 소개
-본 시스템은 차량 내 빌트인 캠을 활용한 신호 위반 자동 단속 시스템으로, 빌트인 캠의 영상과 라즈베리파이, GPS 센서를 이용한다.
-앞 차량을 빌트인 캠 및 나의 GPS 정보를 이용해 거리를 측정하고, 나와 신호등까지의 거리를 기준으로 신호 위반을 판단한다.
-최종적으로 판단된 정보를 서버에 저장 및 Application으로 전송해 자동으로 양식을 완성해 준다.
+T-VAR는 차량 내 빌트인 캠을 활용한 신호 위반 자동 단속 시스템으로, 빌트인 캠의 영상과 라즈베리파이, GPS 센서를 이용한다.
+앞 차량을 빌트인 캠의 영상정 및 GPS 정보를 이용해 거리를 측정하고, 현재 내 위치로부터 신호등까지의 거리와 비교해 신호 위반을 판단한다.
+최종적으로 신호 위반으로 판단된 정보를 서버에 저장 및 Application으로 전송해 자동으로 양식을 완성해 준다.
 
 # 목차
 • 🎥시연 영상<br>
 • 💁‍♂️팀 소개 및 역할<br>
 • 📌영역별 소개<br>
-• 📁파일 구성도도<br>
+• 📁파일 구성도<br>
 • 👨‍💻영역별 개발 환경<br>
 • 🔍각 영역별 구성도<br>
 • 🛠️HW 설계
@@ -31,13 +31,12 @@ https://myoungjang.site/youtube
 | **Team member** | 오준혁 | https://github.com/hulalahu| stephan330@naver.com| • Custom data 학습 파일 생성<br>• 공공 데이터 수집 및 가공<br>• 모듈 Case 설계 및 안전성 검증<br>• 데이터 증강 알고리즘 개발     |
 
 ## 📌영역별 소개
-1. Built-in Cam Module : 상시 촬영을 진행하며, 신호등과의 거리가 50m 안으로 들어올 때부터 서버에 실시간으로 스트림을 진행한다
-2. Server : 실시간으로 전송받은 영상 정보에 대해 객체 인식을 진행하고 인식된 객체와 나의 거리 파악, 서울시 공공데이터를 기준으로 신호등과 나의 거리를 파악을 통해
-신호 위반 판단을 진행한다.
-3. Cloud Storage : 신호 위반 판단으로 판정날 경우 차번호, 위반날짜, 위반장소, 위반 항목을 txt파일로 저장하고, 이에 해당하는 위반 영상을 같이 저장 및 관리한다.
-( 이때 저장소는 48시간이 넘은 데이터는 자동으로 삭제하도록 한다)
-4. Application : 사용자가 저장소에 로그인 하여 저장된 정보들을 리스트로 받아온다. 신호 위반이라 판단된 정보를 확인할 수 있고 원하는 경우 자동으로 양식을 생성해준다.
-5. API : 위치 좌표를 Reverse Geo Coding을 이용해 도로명 주소로 바꿔준다.
+1. Built-in Cam Module : 상시 촬영을 진행하며, 신호등과의 거리가 50m 안으로 들어올 때부터 서버에 실시간으로 영상 스트림을 진행한다.
+2. Server : 실시간으로 전송받은 영상 정보에 객체 인식을 진행하고 현재 내 위치로부터 앞 차량까지의 거리, 서울시 공공데이터를 기준으로 정지선과 현재 내 위치까지의 거리를 비교해 통해신호 위반 판단을 진행한다.
+3. Cloud Storage : 신호 위반 판단으로 판정날 경우 차번호, 위반날짜, 위반 위치, 위반 항목을 txt파일로 저장하고, 이에 해당하는 위반 영상을 같이 저장 및 관리한다.<br>
+( 이때 저장소는 48시간이 넘은 데이터는 자동으로 삭제하도록 한다)<br>
+4. Application : 사용자가 Application에 로그인 하여 저장된 정보들을 리스트로 확인 할 수 있다. 신호 위반이라 판단된 정보를 확인할 수 있고, 원하는 경우 자동으로 양식을 생성 및 신고 기능을 지원한다.
+5. API : 위치 좌표를 Reverse Geocoding을 이용해 도로명 주소로 바꿔준다.
 
 
 ## 📁파일 구성도
@@ -89,7 +88,7 @@ https://myoungjang.site/youtube
 #### 📱Application 구성
 <img src="./Readme_img/Application(1108_615).png" width="886.4" height="492"/>
 
-#### 📲Application UI GUIDE
+#### 📲Application UI Guide
 **• Application의 대기 화면(홍익대 마스코드 와우)** <br>
 <img src="./Readme_img/Application_Guide_1(332_533).png"/> <br>
 
@@ -102,19 +101,19 @@ https://myoungjang.site/youtube
 **• Google drive에 저장된 신호 위반 목록을 불러와 리스트로 보여줌** <br>
 <img src="./Readme_img/Application_Guide_4(332_533).png"/> <br>
 
-**• 신호 위반 리스트 중, 한개 선택시 제보양식서를 생성** <br>
+**• 신호 위반 리스트 중, 원하는 항목 선택시 제보양식서를 생성** <br>
 <img src="./Readme_img/Application_Guide_6(322_533).png"/> <br>
 
-**• 신호 위반 리스트의 구글 맵 클릭, 한개 선택시 아래와 같이 위치 좌표 확인 가능** <br>
+**• 신호 위반 리스트의 구글 맵 클릭시 아래와 같이 위치 좌표 확인 가능** <br>
 <img src="./Readme_img/Application_Guide_5(332_533).png"/> <br>
 
 ## 🛠️HW 설계
-• T-VAR 시스템에 맞는 자체적인 모듈 제작 진행
+목적 : T-VAR 시스템에 맞는 자체적인 HW 제작 진행
 ### 설계 사양 및 사용 Tool 
 • 3D Modeling Tool  : **Simens NX 10.0**<br>
 • Matterial : PLA <br>
 • Size : 358 * 241 * 60 (mm)<br>
-• Weight : Under 1000g
+• Weight :(<1000g)
 
 ### HW 구성 및 기능
 <img src="./Readme_img/HW_design.png" width="676.9" height="456.4"/>
