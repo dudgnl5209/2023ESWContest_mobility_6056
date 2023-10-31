@@ -1,0 +1,141 @@
+﻿STEP to UG
+! INFO-     NX STEP AP203 - V2007
+! INFO-      
+! INFO-     Start of Translation: 27-OCT-2023  5:33:42 PM
+! INFO-      
+! STATUS-   Converting Part: C:\Users\k106\OneDrive - 홍익대학교\제21회 임베디드 소프트웨어 경진대회\modeling\usb-3-0-type-a-port-1.snapshot.9\USB 3.0 A Recepticle.stp
+! SUMMARY-   
+! SUMMARY-    STEP Header Information
+! SUMMARY-   
+! SUMMARY-  Description      Unknown
+! SUMMARY-  Imp_Level        2;1
+! SUMMARY-  File_Name        C:\Users\sflee\OneDrive - L3 Technologies, Inc\Desktop\USB 3.0 A Recepticle.stp
+! SUMMARY-  Date             2019-12-03T08:36:07-06:00
+! SUMMARY-  Author           sflee
+! SUMMARY-  Organization     Unknown
+! SUMMARY-  Pre_Version      ST-DEVELOPER v18
+! SUMMARY-  Orig_System      Autodesk Inventor 2020
+! SUMMARY-  Authorization    Unknown
+! SUMMARY-  Schema_ID        automotive_design
+! SUMMARY-   
+! SUMMARY-    Summary of STEP Entities
+! SUMMARY-   
+! SUMMARY-  Entity Type                                                   Count
+! SUMMARY-  -----------                                                   ------
+! SUMMARY-  advanced_face ..............................................:    913
+! SUMMARY-  application_context ........................................:      1
+! SUMMARY-  axis2_placement_3d .........................................:   1183
+! SUMMARY-  b_spline_curve_with_knots ..................................:     66
+! SUMMARY-  b_spline_surface_with_knots ................................:     30
+! SUMMARY-  cartesian_point ............................................:   8434
+! SUMMARY-  circle .....................................................:    246
+! SUMMARY-  closed_shell ...............................................:      5
+! SUMMARY-  context_dependent_shape_representation .....................:     12
+! SUMMARY-  cylindrical_surface ........................................:    176
+! SUMMARY-  direction ..................................................:   4537
+! SUMMARY-  edge_curve .................................................:   2519
+! SUMMARY-  edge_loop ..................................................:    969
+! SUMMARY-  ellipse ....................................................:     36
+! SUMMARY-  face_bound .................................................:     56
+! SUMMARY-  face_outer_bound ...........................................:    913
+! SUMMARY-  geometric_representation_context_and_global_uncertainty_a ..:      7
+! SUMMARY-  item_defined_transformation ................................:     12
+! SUMMARY-  length_unit_and_si_unit ....................................:      1
+! SUMMARY-  line .......................................................:   2171
+! SUMMARY-  manifold_solid_brep ........................................:      5
+! SUMMARY-  next_assembly_usage_occurrence .............................:     12
+! SUMMARY-  oriented_edge ..............................................:   5038
+! SUMMARY-  plane ......................................................:    707
+! SUMMARY-  plane_angle_unit_and_si_unit ...............................:      1
+! SUMMARY-  product ....................................................:      6
+! SUMMARY-  product_context ............................................:      1
+! SUMMARY-  product_definition .........................................:      6
+! SUMMARY-  product_definition_context .................................:      1
+! SUMMARY-  product_definition_formation ...............................:      6
+! SUMMARY-  product_definition_shape ...................................:     18
+! SUMMARY-  product_related_product_category ...........................:      6
+! SUMMARY-  representation_relationship_with_transformation_and_shape ..:     12
+! SUMMARY-  shape_representation .......................................:      6
+! SUMMARY-  si_unit_and_solid_angle_unit ...............................:      1
+! SUMMARY-  uncertainty_measure_with_unit ..............................:      7
+! SUMMARY-  vector .....................................................:   2171
+! SUMMARY-  vertex_point ...............................................:   1596
+! SUMMARY-                                                               -------
+! SUMMARY-  Total                                                          31887
+! STATUS-    
+! STATUS-   Converting to Output Form (Phase 2 of 3): 27-OCT-2023 5:33:43 PM
+! STATUS-    
+! STATUS-    
+! STATUS-   Generating UG geometry and placing them in parts
+! STATUS-    
+! STATUS-   Creating the UG part (Phase 3 of 3): 27-OCT-2023  5:33:45 PM
+! INFO-     Filing Part ..: C:\Users\k106\OneDrive - 홍익대학교\제21회 임베디드 소프트웨어 경진대회\modeling\USB 3.0 A Recepticle Upper Pin
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 27-OCT-2023  5:33:49 PM
+! INFO-     Filing Part ..: C:\Users\k106\OneDrive - 홍익대학교\제21회 임베디드 소프트웨어 경진대회\modeling\USB 3.0 A Recepticle Lower Pin
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 27-OCT-2023  5:33:49 PM
+! INFO-     Filing Part ..: C:\Users\k106\OneDrive - 홍익대학교\제21회 임베디드 소프트웨어 경진대회\modeling\USB 3.0 A Recepticle Rear Insert Fit
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 27-OCT-2023  5:33:49 PM
+! INFO-     Filing Part ..: C:\Users\k106\OneDrive - 홍익대학교\제21회 임베디드 소프트웨어 경진대회\modeling\USB 3.0 A Recepticle Insert Fit
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 27-OCT-2023  5:33:49 PM
+! INFO-     Filing Part ..: C:\Users\k106\OneDrive - 홍익대학교\제21회 임베디드 소프트웨어 경진대회\modeling\USB 3.0 A Recepticle Shell
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 27-OCT-2023  5:33:50 PM
+! INFO-     Filing Part ..: C:\Users\k106\OneDrive - 홍익대학교\제21회 임베디드 소프트웨어 경진대회\modeling\USB 3.0 A Recepticle.prt
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:    12
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             12
+! INFO-      
+! INFO-     Total number of solids input for this translation       :         5
+! INFO-      
+! INFO-     Number of solids created without body validation faults :         5
+! INFO-      
+! INFO-     Number of solids created with body validation fault(s)  :         0
+! INFO-      
+! INFO-     Number of solids ending up as sheet bodies              :         0
+! INFO-      
+! INFO-     End of Translation: 27-OCT-2023  5:33:50 PM
+! INFO-      
