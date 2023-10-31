@@ -94,7 +94,7 @@ https://myoungjang.site/youtube
 
 ## 🛠️HW 설계
 • T-VAR 시스템에 맞는 자체적인 모듈 제작 진행
-#### 설계 사양 및 사용한 SW 
+#### 설계 사양 및 사용 Tool 
 • 3D Modeling SW  : <img src="https://img.shields.io/badge/Fusion360-FF6550?style=for-the-badge&logo=nx&logoColor=white"> <br>
 • Matterial : PLA <br>
 • Size : 358 * 241 * 60 (mm)<br>
