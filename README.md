@@ -90,7 +90,10 @@ https://myoungjang.site/youtube
 <img src="./Readme_img/Application(1108_615).png" width="886.4" height="492"/>
 
 #### 📲Application UI GUIDE
-![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/124030468/e63015f9-98e6-4c62-8250-0e61f8a0263b)
+• Application의 대기 화면(홍익대 마스코드 와우) <br>
+<img src="./Readme_img/Application_Guide_1(332_533).png"/>
+• Application의 로그인 화면 <br>
+<img src="./Readme_img/Application_Guide_2(332_533).png"/>
 
 ## 🛠️HW 설계
 • T-VAR 시스템에 맞는 자체적인 모듈 제작 진행
