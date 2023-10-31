@@ -106,7 +106,7 @@ https://myoungjang.site/youtube
 
 
 #### Modeling File 및 실제 제품
-1. Modeling File
+1. Assembly File
 
 2. 실제 제품
 <img src="./Readme_img/HW_Real(3535_2439).png" width="530.25" height="365.85"/>
