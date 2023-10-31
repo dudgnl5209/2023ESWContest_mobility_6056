@@ -90,17 +90,22 @@ https://myoungjang.site/youtube
 <img src="./Readme_img/Application(1108_615).png" width="886.4" height="492"/>
 
 #### 📲Application UI GUIDE
-• Application의 대기 화면(홍익대 마스코드 와우) <br>
+**• Application의 대기 화면(홍익대 마스코드 와우)** <br>
 <img src="./Readme_img/Application_Guide_1(332_533).png"/> <br>
-• Application의 로그인 화면 <br>
+
+**• Application의 로그인 화면** <br>
 <img src="./Readme_img/Application_Guide_2(332_533).png"/> <br>
-• Google계정으로 로그인 후, 로그인된 아이디로 Google drive 연동 <br>
+
+**• Google계정으로 로그인 후, 로그인된 아이디로 Google drive 연동** <br>
 <img src="./Readme_img/Application_Guide_3(332_533).png"/> <br>
-• Google drive에 저장된 신호 위반 목록을 불러와 리스트로 보여줌 <br>
+
+**• Google drive에 저장된 신호 위반 목록을 불러와 리스트로 보여줌** <br>
 <img src="./Readme_img/Application_Guide_4(332_533).png"/> <br>
-• 신호 위반 리스트 중, 한개 선택시 제보양식서를 생성 <br>
-<img src="./Readme_img/Application_Guide_6(332_533).png"/> <br>
-• 신호 위반 리스트의 구글 맵 클릭, 한개 선택시 아래와 같이 위치 좌표 확인 가능 <br>
+
+**• 신호 위반 리스트 중, 한개 선택시 제보양식서를 생성** <br>
+<img src="./Readme_img/Application_Guide_6(322_533).png"/> <br>
+
+**• 신호 위반 리스트의 구글 맵 클릭, 한개 선택시 아래와 같이 위치 좌표 확인 가능** <br>
 <img src="./Readme_img/Application_Guide_5(332_533).png"/> <br>
 
 ## 🛠️HW 설계
@@ -109,7 +114,7 @@ https://myoungjang.site/youtube
 • 3D Modeling Tool  : **Simens NX 10.0**<br>
 • Matterial : PLA <br>
 • Size : 358 * 241 * 60 (mm)<br>
-• Weight : 
+• Weight : Under 1000g
 
 #### HW 구성 및 기능
 <img src="./Readme_img/HW_design.png" width="676.9" height="456.4"/>
@@ -117,7 +122,8 @@ https://myoungjang.site/youtube
 
 
 #### Modeling File 및 실제 제품
-1. Assembly File
+1. Assembly File<br>
+<img src="./Readme_img/HW_Assembly1.png" width="284.5" height="192.25"/> <img src="./Readme_img/HW_Assembly.png" width="367.25" height="191.5"/>
 
 2. 실제 제품
 <img src="./Readme_img/HW_Real(3535_2439).png" width="530.25" height="365.85"/>
