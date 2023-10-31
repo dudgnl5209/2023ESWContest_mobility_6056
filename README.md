@@ -109,6 +109,6 @@ https://myoungjang.site/youtube
 1. Modeling File
 
 2. 실제 제품
-<img src="./Readme_img/HW_Real(1400_1050).jpg" width="560" height="420"/>
+<img src="./Readme_img/HW_Real(3535_2439).png" width="530.25" height="365.85"/>
 
 
