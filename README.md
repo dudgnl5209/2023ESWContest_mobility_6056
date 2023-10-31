@@ -13,13 +13,13 @@
 https://myoungjang.site/youtube
 
 ## 💁‍♂️팀 소개 및 역할
-| Position    | Name&nbsp;&nbsp;   | GitHub | Email | Role&nbsp;&nbsp;&nbsp; |
+| Position    | Name&nbsp;&nbsp;   | GitHub | Email | Role |
 |:-------------:|:--------:|--------|-------|------|
-| **Team Leader** | 김영휘 | https://github.com/dudgnl5209| dudgnl5209@naver.com| 기획 및 개발 총괄<br>  웹 스트리밍 통신 구현<br> 위반 데이터 저장소 관리<br>Reverse Geocoding 통합 처리<br> 공공 데이터 수집 및 가공     |
-| **Team member** | 김우주 | https://github.com/pupukii   | wj3507@naver.com    | 객체 추적 모델 설계 및 구현<br> Image Processing, 신호 위반 판단 Logic 구현<br> 신호 위반 관련 법규 분석     |
-| **Team member** | 신유재 | https://github.com/Uj710     | yujae710@naver.com  | Server 통신 관리, Application 개발<br> UI디자인, 저장소와 Application 간의 통신 개발     |
-| **Team member** | 한현준 |        | alqp201@gmail.com   | 객체 추적 모델 설계 및 구현<br> Image Processing, 신호 위반 판단 Logic 구현<br> 위반 데이터 후처리     |
-| **Team member** | 오준혁 |        | stephan330@naver.com| Custom data 학습 파일 생성<br> 공공 데이터 수집 및 가공, 모듈 Case 설계 및 안전성 검증<br> 데이터 증강 알고리즘 개발     |
+| **Team Leader** | 김영휘 | https://github.com/dudgnl5209| dudgnl5209@naver.com| 기획 및 개발 총괄,  웹 스트리밍 통신 구현, 위반 데이터 저장소 관리,Reverse Geocoding 통합 처리, 공공 데이터 수집 및 가공     |
+| **Team member** | 김우주 | https://github.com/pupukii   | wj3507@naver.com    | 객체 추적 모델 설계 및 구현, Image Processing, 신호 위반 판단 Logic 구현, 신호 위반 관련 법규 분석     |
+| **Team member** | 신유재 | https://github.com/Uj710     | yujae710@naver.com  | Server 통신 관리, Application 개발, UI디자인, 저장소와 Application 간의 통신 개발     |
+| **Team member** | 한현준 |        | alqp201@gmail.com   | 객체 추적 모델 설계 및 구현, Image Processing, 신호 위반 판단 Logic 구현, 위반 데이터 후처리     |
+| **Team member** | 오준혁 |        | stephan330@naver.com| Custom data 학습 파일 생성, 공공 데이터 수집 및 가공, 모듈 Case 설계 및 안전성 검증, 데이터 증강 알고리즘 개발     |
 
 ### 📌영역별 소개
 1. Built-in Cam Module : 상시 촬영을 진행하며, 신호등과의 거리가 50m 안으로 들어올 때부터 서버에 실시간으로 스트림을 진행한다
