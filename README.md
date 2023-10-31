@@ -110,18 +110,18 @@ https://myoungjang.site/youtube
 
 ## 🛠️HW 설계
 • T-VAR 시스템에 맞는 자체적인 모듈 제작 진행
-#### 설계 사양 및 사용 Tool 
+### 설계 사양 및 사용 Tool 
 • 3D Modeling Tool  : **Simens NX 10.0**<br>
 • Matterial : PLA <br>
 • Size : 358 * 241 * 60 (mm)<br>
 • Weight : Under 1000g
 
-#### HW 구성 및 기능
+### HW 구성 및 기능
 <img src="./Readme_img/HW_design.png" width="676.9" height="456.4"/>
 
 
 
-#### Modeling File 및 실제 제품
+### Modeling File 및 실제 제품
 1. Assembly File<br>
 <img src="./Readme_img/HW_Assembly1.png" width="284.5" height="192.25"/> <img src="./Readme_img/HW_Assembly.png" width="367.25" height="191.5"/>
 
