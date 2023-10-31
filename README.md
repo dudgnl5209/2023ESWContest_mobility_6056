@@ -28,7 +28,7 @@ https://myoungjang.site/youtube
 | **Team member** | 김우주 | https://github.com/pupukii   | wj3507@naver.com    | • 객체 추적 모델 설계 및 구현<br>• Image Processing<br>• 신호 위반 판단 Logic 구현<br>• 신호 위반 관련 법규 분석     |
 | **Team member** | 신유재 | https://github.com/Uj710     | yujae710@naver.com  | • Server 통신 관리<br>• Application 개발<br>• UI디자인<br>• 저장소와 Application 간의 통신 개발     |
 | **Team member** | 한현준 | https://github.com/barlide   | alqp201@gmail.com   | • 객체 추적 모델 설계 및 구현<br>• Image Processing<br>• 신호 위반 판단 Logic 구현<br>• 위반 데이터 후처리     |
-| **Team member** | 오준혁 | https://github.com/stephan330| • Custom data 학습 파일 생성<br>• 공공 데이터 수집 및 가공<br>• 모듈 Case 설계 및 안전성 검증<br>• 데이터 증강 알고리즘 개발     |
+| **Team member** | 오준혁 | https://github.com/stephan330| stephan330@naver.com| • Custom data 학습 파일 생성<br>• 공공 데이터 수집 및 가공<br>• 모듈 Case 설계 및 안전성 검증<br>• 데이터 증강 알고리즘 개발     |
 
 ## 📌영역별 소개
 1. Built-in Cam Module : 상시 촬영을 진행하며, 신호등과의 거리가 50m 안으로 들어올 때부터 서버에 실시간으로 스트림을 진행한다
