@@ -81,7 +81,7 @@ https://myoungjang.site/youtube
 
 ## 🔍각 영역별 구성도
 #### 📷Built - in Cam Module 구성
-<img src="./Readme_img/Built_in_cam_module(650_313).png" width="520" height="250.4"/>
+<img src="./Readme_img/Built_in_cam_module(1058_377).png" width="529" height="188.5"/>
 
 #### 🛜Server 구성 및 상황별 판단 Logic
 <img src="./Readme_img/Server_and_logic(1072_682).png" width="857.6" height="545.6"/>
