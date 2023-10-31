@@ -100,7 +100,7 @@ https://myoungjang.site/youtube
 • Size : 000 * 000 * 000 (W * L * H)
 
 #### HW 구성 및 기능
-![image](https://github.com/dudgnl5209/2023ESWContest_mobility_6056/assets/116995224/0b48d3cd-db40-41d2-b12e-404ee905a4f1)
+<img src="./Readme_img/HW_design.png" width="483.5 * 0.3" height="326"/>
 
 
 
