@@ -91,9 +91,17 @@ https://myoungjang.site/youtube
 
 #### 📲Application UI GUIDE
 • Application의 대기 화면(홍익대 마스코드 와우) <br>
-<img src="./Readme_img/Application_Guide_1(332_533).png"/>
+<img src="./Readme_img/Application_Guide_1(332_533).png"/> <br>
 • Application의 로그인 화면 <br>
-<img src="./Readme_img/Application_Guide_2(332_533).png"/>
+<img src="./Readme_img/Application_Guide_2(332_533).png"/> <br>
+• Google계정으로 로그인 후, 로그인된 아이디로 Google drive 연동 <br>
+<img src="./Readme_img/Application_Guide_3(332_533).png"/> <br>
+• Google drive에 저장된 신호 위반 목록을 불러와 리스트로 보여줌 <br>
+<img src="./Readme_img/Application_Guide_4(332_533).png"/> <br>
+• 신호 위반 리스트 중, 한개 선택시 제보양식서를 생성 <br>
+<img src="./Readme_img/Application_Guide_6(332_533).png"/> <br>
+• 신호 위반 리스트의 구글 맵 클릭, 한개 선택시 아래와 같이 위치 좌표 확인 가능 <br>
+<img src="./Readme_img/Application_Guide_5(332_533).png"/> <br>
 
 ## 🛠️HW 설계
 • T-VAR 시스템에 맞는 자체적인 모듈 제작 진행
