@@ -22,7 +22,7 @@ T-VAR는 차량 내 빌트인 캠을 활용한 신호 위반 자동 단속 시�
 https://myoungjang.site/youtube
 
 ## 💁‍♂️팀 소개 및 역할
-| Position    | Name&nbsp;&nbsp;   | GitHub | Email | Role |
+| Position    | Name&nbsp;&nbsp;   | GitHub | Email | Role&nbsp;&nbsp; |
 |:-------------:|:--------:|--------|-------|------|
 | **Team Leader** | 김영휘 | https://github.com/dudgnl5209| dudgnl5209@naver.com| • 기획 및 개발 총괄<br>• 웹 스트리밍 통신 구현<br>• 위반 데이터 저장소 관리<br>• Reverse Geocoding 통합 처리<br>• 공공 데이터 수집 및 가공     |
 | **Team member** | 김우주 | https://github.com/pupukii   | wj3507@naver.com    | • 객체 추적 모델 설계 및 구현<br>• Image Processing<br>• 신호 위반 판단 Logic 구현<br>• 신호 위반 관련 법규 분석     |
