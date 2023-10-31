@@ -97,7 +97,7 @@ https://myoungjang.site/youtube
 #### 설계 사양 및 사용한 SW 
 • 3D Modeling SW  : <img src="https://img.shields.io/badge/Fusion360-FF6550?style=for-the-badge&logo=nx&logoColor=white"> <br>
 • Matterial : PLA <br>
-• Size : 358 * 241 * 60 (mm)
+• Size : 358 * 241 * 60 (mm)<br>
 • Weight : 
 
 #### HW 구성 및 기능
