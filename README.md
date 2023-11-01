@@ -86,7 +86,7 @@ https://myoungjang.site/youtube
 <img src="./Readme_img/Server_and_logic(3036_1906).png" width="759" height="476.5"/>
 
 #### 📱Application 구성
-<img src="./Readme_img/Application(3036_1395).png" width="759.25" height="370.75"/>
+<img src="./Readme_img/Application(3037_1483).png" width="759.25" height="370.75"/>
 
 #### 📲Application UI Guide
 **• Application의 대기 화면(홍익대 마스코드 와우)** <br>
