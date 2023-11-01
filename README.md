@@ -80,13 +80,13 @@ https://myoungjang.site/youtube
 
 ## 🔍각 영역별 구성도
 #### 📷Built - in Cam Module 구성
-<img src="./Readme_img/Built_in_cam_module(1058_377).png" width="740.6" height="263.9"/>
+<img src="./Readme_img/Built_in_cam_module(3036_1022).png" width="698.28" height="235.06"/>
 
 #### 🛜Server 구성 및 상황별 판단 Logic
-<img src="./Readme_img/Server_and_logic(1072_682).png" width="857.6" height="545.6"/>
+<img src="./Readme_img/Server_and_logic(3036_1906).png" width="759" height="476.5"/>
 
 #### 📱Application 구성
-<img src="./Readme_img/Application(1108_615).png" width="886.4" height="492"/>
+<img src="./Readme_img/Application(3036_1395).png" width="759" height="348.75"/>
 
 #### 📲Application UI Guide
 **• Application의 대기 화면(홍익대 마스코드 와우)** <br>
